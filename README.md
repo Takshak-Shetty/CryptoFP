@@ -158,7 +158,3 @@ This repository accompanies the IEEE conference paper:
 > NMAM Institute of Technology (NMAMIT), Nitte, India
 
 ---
-
-## License
-
-MIT
