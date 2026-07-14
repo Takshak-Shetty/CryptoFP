@@ -1,0 +1,49 @@
+{
+  "label_algo_key": {
+    "RSA_1024": 0,
+    "RSA_2048": 1,
+    "RSA_4096": 2,
+    "Kyber_512": 3,
+    "Kyber_768": 4,
+    "Kyber_1024": 5
+  },
+  "algo": {
+    "RSA": 0,
+    "Kyber": 1
+  },
+  "system_load": {
+    "idle": 0,
+    "low": 1,
+    "medium": 2,
+    "high": 3
+  },
+  "context": {
+    "classical_context": 0,
+    "pqc_context": 1,
+    "synthetic": -1
+  },
+  "misuse_flag": {
+    "0": "correct_use",
+    "1": "misuse"
+  },
+  "class_names": [
+    "RSA_1024",
+    "RSA_2048",
+    "RSA_4096",
+    "Kyber_512",
+    "Kyber_768",
+    "Kyber_1024"
+  ],
+  "idx_to_class": {
+    "0": "RSA_1024",
+    "1": "RSA_2048",
+    "2": "RSA_4096",
+    "3": "Kyber_512",
+    "4": "Kyber_768",
+    "5": "Kyber_1024"
+  },
+  "misuse_classes": [
+    "RSA_1024"
+  ],
+  "note": "label_encoded uses canonical CLASS_TO_IDX order from config.py (RSA_1024=0, RSA_2048=1, RSA_4096=2, Kyber_512=3, Kyber_768=4, Kyber_1024=5). This differs from sklearn LabelEncoder alphabetical order. All models and evaluation scripts must use this mapping."
+}

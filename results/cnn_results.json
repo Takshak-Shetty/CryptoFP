@@ -1,0 +1,205 @@
+{
+  "model": "CNN_1D",
+  "mode": "QUICK (10 epochs)",
+  "input_mode": "tabular",
+  "in_length": 12,
+  "n_features": 12,
+  "feature_cols": [
+    "keygen_time_ms",
+    "enc_time_ms",
+    "dec_time_ms",
+    "memory_peak_kb",
+    "cpu_percent",
+    "enc_dec_ratio",
+    "timing_variance",
+    "memory_delta_kb",
+    "keygen_enc_ratio",
+    "total_time_ms",
+    "log_keygen_ms",
+    "log_dec_ms"
+  ],
+  "architecture": {
+    "filters": [
+      64,
+      128,
+      256
+    ],
+    "kernel_size": 3,
+    "dropout": 0.3,
+    "n_classes": 6
+  },
+  "training": {
+    "train_loss": [
+      1.7544,
+      1.5494,
+      1.3983,
+      1.2817,
+      1.1563,
+      1.053
+    ],
+    "val_loss": [
+      1.7702,
+      1.7548,
+      1.7328,
+      1.7049,
+      1.6715,
+      1.6347
+    ],
+    "train_f1": [
+      0.3065,
+      0.5606,
+      0.743,
+      0.7549,
+      0.8572,
+      0.8399
+    ],
+    "val_f1": [
+      0.0667,
+      0.3611,
+      0.6111,
+      0.6111,
+      0.5278,
+      0.5278
+    ],
+    "best_val_f1": 0.6111,
+    "elapsed_sec": 0.1,
+    "epochs_run": 6
+  },
+  "val": {
+    "split": "val",
+    "n_samples": 9,
+    "accuracy": 0.7778,
+    "f1_macro": 0.6111,
+    "f1_weighted": 0.7037,
+    "precision_macro": 0.5833,
+    "recall_macro": 0.6667,
+    "roc_auc_ovr": 0.9792,
+    "per_class_f1": {
+      "RSA_1024": 0.6667,
+      "RSA_2048": 1.0,
+      "RSA_4096": 0.0,
+      "Kyber_512": 1.0,
+      "Kyber_768": 0.0,
+      "Kyber_1024": 1.0
+    },
+    "confusion_matrix": [
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ]
+    ]
+  },
+  "test": {
+    "split": "test",
+    "n_samples": 9,
+    "accuracy": 0.5556,
+    "f1_macro": 0.5,
+    "f1_weighted": 0.4444,
+    "precision_macro": 0.4444,
+    "recall_macro": 0.6667,
+    "roc_auc_ovr": 0.9643,
+    "per_class_f1": {
+      "RSA_1024": 0.5,
+      "RSA_2048": 0.5,
+      "RSA_4096": 0.0,
+      "Kyber_512": 1.0,
+      "Kyber_768": 0.0,
+      "Kyber_1024": 1.0
+    },
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "paper_cite": "CNN-1D: F1=0.500, Acc=0.556, AUC=0.964"
+}

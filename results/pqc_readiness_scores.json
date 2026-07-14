@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Legacy RSA-only server",
+    "mrs": 22.35,
+    "priority": "CRITICAL",
+    "components": {
+      "algorithm_score": 0.0,
+      "key_strength": 0.41,
+      "timing_efficiency": 0.08,
+      "misuse_absence": 0.7
+    }
+  },
+  {
+    "name": "Hybrid RSA + Kyber (transition)",
+    "mrs": 61.62,
+    "priority": "MEDIUM",
+    "components": {
+      "algorithm_score": 0.5,
+      "key_strength": 0.7575,
+      "timing_efficiency": 0.4214,
+      "misuse_absence": 0.95
+    }
+  },
+  {
+    "name": "Full Kyber deployment",
+    "mrs": 98.15,
+    "priority": "READY",
+    "components": {
+      "algorithm_score": 1.0,
+      "key_strength": 0.9475,
+      "timing_efficiency": 0.9733,
+      "misuse_absence": 1.0
+    }
+  },
+  {
+    "name": "RSA-4096 only (high-sec classical)",
+    "mrs": 34.39,
+    "priority": "HIGH",
+    "components": {
+      "algorithm_score": 0.0,
+      "key_strength": 0.7875,
+      "timing_efficiency": 0.0,
+      "misuse_absence": 0.98
+    }
+  },
+  {
+    "name": "IoT device \u2014 weak RSA",
+    "mrs": 12.65,
+    "priority": "CRITICAL",
+    "components": {
+      "algorithm_score": 0.0,
+      "key_strength": 0.0825,
+      "timing_efficiency": 0.4168,
+      "misuse_absence": 0.15
+    }
+  }
+]

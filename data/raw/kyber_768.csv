@@ -1,0 +1,11 @@
+algo,key_size,operation,keygen_time_ms,enc_time_ms,dec_time_ms,memory_peak_kb,cpu_percent,system_load,timing_variance,label_algo_key,misuse_flag,misuse_reason,misuse_rule,context
+Kyber,768,keygen+enc+dec,0.049972,0.046607,0.062303,3039.49,11.81,high,0.00030799,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.031357,0.031866,0.033761,2385.2,29.98,low,0.00015652,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.039019,0.0294,0.059938,2605.96,16.07,medium,0.0003992,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.021433,0.041748,0.05015,2453.26,26.87,idle,0.00013593,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.035843,0.055698,0.049416,2479.36,29.21,low,0.00034651,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.032017,0.023032,0.034664,2737.98,8.19,medium,9.288e-05,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.03696,0.025589,0.056298,2947.11,6.35,high,0.00032391,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.042428,0.022258,0.032921,2855.34,7.45,high,0.00027565,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.051834,0.021776,0.050216,2531.43,7.71,idle,0.00014377,Kyber_768,0,,,pqc_context
+Kyber,768,keygen+enc+dec,0.042447,0.037908,0.036564,2346.87,8.4,idle,0.00019108,Kyber_768,0,,,pqc_context

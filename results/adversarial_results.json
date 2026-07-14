@@ -1,0 +1,135 @@
+{
+  "sigma_levels": [
+    0.0,
+    0.1,
+    0.2,
+    0.30000000000000004,
+    0.4
+  ],
+  "robustness_by_sigma": [
+    {
+      "sigma": 0.0,
+      "results": {
+        "Random Forest": {
+          "f1": 1.0,
+          "f1_std": 0.0,
+          "acc": 1.0
+        }
+      }
+    },
+    {
+      "sigma": 0.1,
+      "results": {
+        "Random Forest": {
+          "f1": 0.25,
+          "f1_std": 0.0,
+          "acc": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "sigma": 0.2,
+      "results": {
+        "Random Forest": {
+          "f1": 0.25,
+          "f1_std": 0.0,
+          "acc": 0.3333333333333333
+        }
+      }
+    },
+    {
+      "sigma": 0.30000000000000004,
+      "results": {
+        "Random Forest": {
+          "f1": 0.07407407407407407,
+          "f1_std": 0.0,
+          "acc": 0.2222222222222222
+        }
+      }
+    },
+    {
+      "sigma": 0.4,
+      "results": {
+        "Random Forest": {
+          "f1": 0.13668430335097,
+          "f1_std": 0.08854423538667526,
+          "acc": 0.25925925925925924
+        }
+      }
+    }
+  ],
+  "feature_sensitivity": [
+    {
+      "feature": "keygen_time_ms",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "enc_time_ms",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "dec_time_ms",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "memory_peak_kb",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "cpu_percent",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "enc_dec_ratio",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "timing_variance",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "memory_delta_kb",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "keygen_enc_ratio",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "total_time_ms",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "log_keygen_ms",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    },
+    {
+      "feature": "log_dec_ms",
+      "f1_drop": 0.0,
+      "f1_drop_std": 0.0,
+      "sensitivity": "LOW"
+    }
+  ]
+}

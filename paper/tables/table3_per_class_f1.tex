@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Per-class F1 score by algorithm and model}
+  \label{tab:per_class_f1}
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    \textbf{Model} & \textbf{RSA_1024} & \textbf{RSA_2048} & \textbf{RSA_4096} & \textbf{Kyber_512} & \textbf{Kyber_768} & \textbf{Kyber_1024} \\
+    \midrule
+    Random Forest & \textbf{1.000} & 0.000 & 0.500 & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} \\
+    SVM (RBF kernel) & \textbf{1.000} & \textbf{0.667} & \textbf{0.667} & \textbf{1.000} & \textbf{1.000} & \textbf{1.000} \\
+    \midrule
+    1D-CNN & 0.500 & 0.500 & 0.000 & \textbf{1.000} & 0.000 & \textbf{1.000} \\
+    LSTM + Attention$^\dagger$ & 0.000 & 0.000 & 0.500 & 0.000 & 0.000 & 0.500 \\
+    \bottomrule
+  \end{tabular}
+  \begin{tablenotes}
+    \small \item Bold = highest F1 for that algorithm class. $^\dagger$ Proposed model. Kyber variants share similar timing profiles — inter-variant confusion is expected and noted.
+  \end{tablenotes}
+\end{table}

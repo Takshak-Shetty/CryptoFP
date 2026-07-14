@@ -1,0 +1,113 @@
+# ============================================================
+# CryptoFP — ML Detection of Cryptographic Algorithms
+# requirements.txt
+# Install: pip install -r requirements.txt
+# Python: 3.9 or 3.10 recommended
+# ============================================================
+
+
+# ------------------------------------------------------------
+# PHASE 1 — Cryptographic libraries (data collection)
+# ------------------------------------------------------------
+
+# Classical cryptography (RSA)
+cryptography==42.0.8
+
+# Post-Quantum Cryptography — Kyber-512/768/1024
+# Install liboqs-python AFTER installing liboqs C library:
+#   Ubuntu:  sudo apt install liboqs-dev
+#   macOS:   brew install liboqs
+#   Windows: build from source at https://github.com/open-quantum-safe/liboqs
+liboqs-python==0.14.1
+
+# System memory profiling (memory_usage per operation)
+psutil==5.9.8
+memory-profiler==0.61.0
+
+
+# ------------------------------------------------------------
+# PHASE 2 — Data handling & feature engineering
+# ------------------------------------------------------------
+
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.1
+
+# Class imbalance — SMOTE for misuse minority class
+imbalanced-learn==0.12.3
+
+# Preprocessing, scaling, label encoding
+scikit-learn==1.5.1
+
+
+# ------------------------------------------------------------
+# PHASE 3 — Machine learning models
+# ------------------------------------------------------------
+
+# Baseline models (RF, SVM) — already covered by scikit-learn above
+
+# Deep learning — 1D-CNN and LSTM + Attention
+# CPU-only install (works on any laptop, no GPU needed):
+torch==2.3.1
+# For GPU (CUDA 12.1) uncomment instead:
+# torch==2.3.1+cu121 --index-url https://download.pytorch.org/whl/cu121
+
+# Hyperparameter tuning
+optuna==3.6.1
+
+
+# ------------------------------------------------------------
+# PHASE 4 — Explainability
+# ------------------------------------------------------------
+
+# SHAP feature importance (works with RF, SVM, and deep models)
+shap==0.45.1
+
+# Gradient-based attribution for PyTorch models
+captum==0.7.0
+
+
+# ------------------------------------------------------------
+# PHASE 5 — Evaluation & visualisation
+# ------------------------------------------------------------
+
+matplotlib==3.9.1
+seaborn==0.13.2
+
+# Interactive plots (optional — useful in notebooks)
+plotly==5.22.0
+
+
+# ------------------------------------------------------------
+# PHASE 6 — Experiment tracking & reproducibility
+# ------------------------------------------------------------
+
+# Logs all model runs: params, metrics, artifacts
+mlflow==2.14.1
+
+# Reproducible random seeds across numpy/torch/python
+# (no install needed — handled in config.py)
+
+
+# ------------------------------------------------------------
+# Notebooks (optional)
+# ------------------------------------------------------------
+
+jupyter==1.0.0
+ipykernel==6.29.5
+ipywidgets==8.1.3
+tqdm==4.66.4
+
+
+# ------------------------------------------------------------
+# Utilities
+# ------------------------------------------------------------
+
+# Save/load sklearn models and scalers
+joblib==1.4.2
+
+# YAML config support (optional extension)
+pyyaml==6.0.1
+
+# Reproducible environment snapshot
+pip-tools==7.4.1

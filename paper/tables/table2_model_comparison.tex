@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Model performance comparison on CryptoFP test set}
+  \label{tab:model_comparison}
+  \renewcommand{\arraystretch}{1.15}
+  \begin{tabular}{lrrrrrrr}
+    \toprule
+    \textbf{Model} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 (macro)} & \textbf{AUC (OvR)} & \textbf{Train (s)} & \textbf{Robust. σ=5\%} \\
+    \midrule
+    Random Forest & 0.7778 & 0.7500 & 0.7500 & 0.7500 & 0.9673 & N/A & N/A \\
+    SVM (RBF kernel) & \textbf{0.8889} & \textbf{0.9167} & \textbf{0.9167} & \textbf{0.8889} & \textbf{1.0000} & N/A & N/A \\
+    \midrule
+    1D-CNN & 0.5556 & 0.4444 & 0.6667 & 0.5000 & 0.9643 & N/A & N/A \\
+    LSTM + Attention$^\dagger$ & 0.3333 & 0.1111 & 0.3333 & 0.1667 & 0.7173 & N/A & N/A \\
+    \bottomrule
+  \end{tabular}
+  \begin{tablenotes}
+    \small \item $^\dagger$ Proposed model. Bold = best in column. Robust.\ = macro-F1 under Gaussian noise $\sigma=5\%$.
+  \end{tablenotes}
+\end{table}
